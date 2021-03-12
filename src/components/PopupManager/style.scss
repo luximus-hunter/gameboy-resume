@@ -1,0 +1,25 @@
+#popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  font-family: 'VT323', monospace;
+  color: #4d1a00;
+
+  background-color: #000a;
+  background-size: 100%;
+
+  padding: 15px;
+
+  .popup-textline {
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+
+    &:nth-child(1) {
+      font-size: 50px;
+    }
+  }
+}

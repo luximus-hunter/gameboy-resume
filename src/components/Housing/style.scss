@@ -1,0 +1,40 @@
+@import '../../globals.scss';
+
+#main-container {
+  border: $houzing-border-size solid $body-dark;
+  background-color: $body;
+  width: $body-size;
+  flex: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: $border-radius;
+  height: $body-size * 1.75;
+  box-shadow: 8px 8px 0 $body-darker;
+}
+
+#title-bar {
+  text-align: center;
+  padding: $spacing 0;
+  height: 10%;
+
+  img {
+    height: 100%;
+  }
+}
+
+#screen-container {
+  position: relative;
+  border: $houzing-border-size solid $body-dark;
+  background-color: #7c7c7c;
+  width: 320px + $houzing-border-size * 2;
+  height: 320px + $houzing-border-size * 2;
+  margin: 0 auto;
+  border-radius: $border-radius / 3;
+  overflow: hidden;
+  // filter: grayscale(1);
+}
+
+// #footer-bar {
+// }

@@ -1,0 +1,29 @@
+// Sizes
+$body-size: 400px;
+$spacing: 20px;
+$border-radius: $spacing * 1.5;
+$houzing-border-size: 5px;
+
+$button-size: 50px;
+$button-border-size: 5px;
+
+// Colors
+$body: #dddce1;
+$d-pad: #222222;
+$ab-button: #b13267;
+
+// Shades
+$body-darker: darken($body, 40);
+$body-dark: darken($body, 20);
+$body-light: lighten($body, 20);
+$body-lighter: lighten($body, 40);
+
+$d-pad-darker: darken($d-pad, 40);
+$d-pad-dark: darken($d-pad, 20);
+$d-pad-light: lighten($d-pad, 20);
+$d-pad-lighter: lighten($d-pad, 40);
+
+$ab-button-darker: darken($ab-button, 40);
+$ab-button-dark: darken($ab-button, 20);
+$ab-button-light: lighten($ab-button, 20);
+$ab-button-lighter: lighten($ab-button, 40);

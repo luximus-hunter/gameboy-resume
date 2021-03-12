@@ -1,0 +1,92 @@
+@import '../../../../globals.scss';
+
+#button-container {
+  width: $body-size - $spacing * 4;
+  display: flex;
+  justify-content: space-between;
+  margin: $spacing auto;
+  // margin-top: 400px;
+
+  #d-pad {
+    .row {
+      display: flex;
+    }
+
+    .empty,
+    .d-pad-button {
+      width: $button-size;
+      height: $button-size;
+      display: block;
+    }
+
+    .d-pad-button {
+      border-radius: $button-size / 4;
+      font-size: $button-size / 2;
+      border: $button-border-size solid $d-pad-dark;
+      background-color: $d-pad;
+      color: white;
+      cursor: pointer;
+
+      &:active {
+        animation: d-pad-press 200ms;
+      }
+
+      @keyframes d-pad-press {
+        0% {
+          background-color: $d-pad-light;
+          color: $d-pad;
+          border-color: $d-pad;
+        }
+        50% {
+        }
+        100% {
+        }
+      }
+    }
+  }
+
+  #ab-buttons {
+    margin-top: $button-size;
+    width: $button-size * 2.25;
+    height: $button-size;
+    display: flex;
+    justify-content: space-between;
+
+    .ab-button {
+      width: $button-size;
+      height: $button-size;
+      display: block;
+      border-radius: 50%;
+      font-size: $button-size / 2;
+      border: $button-border-size solid $ab-button-dark;
+      background-color: $ab-button;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+
+      &:active {
+        animation: ab-press 200ms;
+      }
+
+      @keyframes ab-press {
+        0% {
+          background-color: $ab-button-light;
+          color: $ab-button;
+          border-color: $ab-button;
+        }
+        50% {
+        }
+        100% {
+        }
+      }
+
+      &:first-child {
+        transform: translateY(30%);
+      }
+
+      &:last-child {
+        transform: translateY(-30%);
+      }
+    }
+  }
+}

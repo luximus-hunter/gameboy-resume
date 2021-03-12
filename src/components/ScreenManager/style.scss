@@ -1,0 +1,24 @@
+.screens {
+  position: absolute;
+  transition: top 500ms, left 500ms;
+
+  &-row {
+    display: flex;
+  }
+}
+
+.screen {
+  &-row {
+    display: flex;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-sprites {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
